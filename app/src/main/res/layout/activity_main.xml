@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo3"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="3dp"
+    tools:layout_editor_absoluteY="-1dp">
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="401dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="6dp"
+        android:background="@color/black"
+        android:paddingTop="15dp"
+        android:text="   CONVERÇÃO DE BASES NUMERICAS"
+        android:textColor="@color/purple_200"
+        android:textColorHint="@color/black"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_binario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="32dp"
+        android:onClick="btn_binario"
+        android:text="BINÁRIO"
+        android:textColor="@color/purple_200"
+        android:textSize="20sp"
+        app:backgroundTint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/btn_decimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Octal" />
+
+    <Button
+        android:id="@+id/btn_hexadecimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="181dp"
+        android:onClick="btn_hexadecimal"
+        android:text="HEXADECIMAL"
+        android:textColor="@color/purple_200"
+        android:textSize="20sp"
+        app:backgroundTint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_decimal" />
+
+    <Button
+        android:id="@+id/btn_decimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="32dp"
+        android:onClick="btn_decimal"
+        android:text="DECIMAL"
+        android:textColor="@color/purple_200"
+        android:textSize="20sp"
+        app:backgroundTint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/btn_hexadecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_binario" />
+
+    <Button
+        android:id="@+id/btn_Octal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="32dp"
+        android:onClick="btn_octal"
+        android:text="OCTAL"
+        android:textColor="@color/purple_200"
+        android:textSize="20sp"
+        app:backgroundTint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/btn_binario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+</androidx.constraintlayout.widget.ConstraintLayout>

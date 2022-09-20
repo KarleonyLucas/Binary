@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#032A39"
+    tools:context=".Octal">
+
+    <ImageButton
+        android:id="@+id/imagebtn_returnO"
+        android:layout_width="34dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="64dp"
+        android:background="#032A39"
+        android:onClick="imagereturn"
+        android:tint="@color/purple_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+    <TextView
+        android:id="@+id/tv_tituloob"
+        android:layout_width="206dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:text="OCTAL PARA BINÁRIO"
+        android:textColor="@color/purple_200"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_oh"
+        android:layout_width="78dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:inputType="number"
+        android:numeric="decimal"
+        android:text="0"
+        android:textColor="@color/teal_200"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_titulooh" />
+
+    <EditText
+        android:id="@+id/et_ob"
+        android:layout_width="78dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:inputType="number"
+        android:numeric="decimal"
+        android:text="0"
+        android:textColor="@color/teal_200"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tituloob" />
+
+    <ImageButton
+        android:id="@+id/btn_oh"
+        android:layout_width="29dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="311dp"
+        android:background="#032A39"
+        android:onClick="btn_oh"
+        android:tint="@color/purple_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/et_oh"
+        app:layout_constraintTop_toBottomOf="@+id/tv_titulooh"
+        app:srcCompat="@android:drawable/ic_menu_send" />
+
+    <ImageButton
+        android:id="@+id/btn_od"
+        android:layout_width="29dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="53dp"
+        android:background="#032A39"
+        android:onClick="btn_od"
+        android:tint="@color/purple_200"
+        app:layout_constraintBottom_toTopOf="@+id/tv_titulooh"
+        app:layout_constraintStart_toEndOf="@+id/et_od"
+        app:layout_constraintTop_toBottomOf="@+id/tv_titulood"
+        app:srcCompat="@android:drawable/ic_menu_send" />
+
+    <TextView
+        android:id="@+id/tv_od"
+        android:layout_width="243dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="23dp"
+        android:text="0"
+        android:textColor="@color/purple_200"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_titulooh"
+        app:layout_constraintStart_toEndOf="@+id/btn_od"
+        app:layout_constraintTop_toBottomOf="@+id/tv_titulood" />
+
+    <EditText
+        android:id="@+id/et_od"
+        android:layout_width="78dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:inputType="number"
+        android:numeric="decimal"
+        android:text="0"
+        android:textColor="@color/teal_200"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_titulood" />
+
+    <TextView
+        android:id="@+id/tv_ob"
+        android:layout_width="243dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="23dp"
+        android:text="0"
+        android:textColor="@color/purple_200"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_titulood"
+        app:layout_constraintStart_toEndOf="@+id/btn_ob"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tituloob" />
+
+    <TextView
+        android:id="@+id/tv_oh"
+        android:layout_width="243dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="22dp"
+        android:text="0"
+        android:textColor="@color/purple_200"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/btn_oh"
+        app:layout_constraintTop_toBottomOf="@+id/tv_titulooh" />
+
+    <TextView
+        android:id="@+id/tv_titulood"
+        android:layout_width="206dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="22dp"
+        android:text="OCTAL PARA DECIMAL"
+        android:textColor="@color/purple_200"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ob" />
+
+    <TextView
+        android:id="@+id/tv_titulooh"
+        android:layout_width="325dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="22dp"
+        android:text="OCTAL PARA HEXADECIMAL"
+        android:textColor="@color/purple_200"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_od" />
+
+    <ImageButton
+        android:id="@+id/btn_ob"
+        android:layout_width="29dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="53dp"
+        android:background="#032A39"
+        android:onClick="btn_ob"
+        android:tint="@color/purple_200"
+        app:layout_constraintBottom_toTopOf="@+id/tv_titulood"
+        app:layout_constraintStart_toEndOf="@+id/et_ob"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tituloob"
+        app:srcCompat="@android:drawable/ic_menu_send" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

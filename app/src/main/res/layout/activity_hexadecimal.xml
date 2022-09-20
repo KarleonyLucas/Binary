@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#032A39"
+    tools:context=".Hexadecimal">
+
+    <ImageButton
+        android:id="@+id/imagebtn_returnh"
+        android:layout_width="34dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="64dp"
+        android:background="#032A39"
+        android:onClick="imagereturn"
+        android:tint="@color/purple_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+    <TextView
+        android:id="@+id/tv_titulohb"
+        android:layout_width="327dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:text="HEXADECIMAL PARA BINÁRIO"
+        android:textColor="@color/purple_200"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_hb"
+        android:layout_width="29dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="20dp"
+        android:background="#032A39"
+        android:onClick="btn_hb"
+        android:tint="@color/purple_200"
+        app:layout_constraintStart_toEndOf="@+id/et_hb"
+        app:layout_constraintTop_toBottomOf="@+id/tv_titulohb"
+        app:srcCompat="@android:drawable/ic_menu_send" />
+
+    <EditText
+        android:id="@+id/et_hb"
+        android:layout_width="78dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="0"
+        android:textColor="@color/teal_200"
+        app:layout_constraintEnd_toStartOf="@+id/btn_hb"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_titulohb" />
+
+    <TextView
+        android:id="@+id/tv_hb"
+        android:layout_width="258dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="20dp"
+        android:text="   0"
+        android:textColor="@color/purple_200"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_titulohd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toEndOf="@+id/btn_hb"
+        app:layout_constraintTop_toBottomOf="@+id/tv_titulohb" />
+
+    <TextView
+        android:id="@+id/tv_hd"
+        android:layout_width="258dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="20dp"
+        android:text="   0"
+        android:textColor="@color/purple_200"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_tituloho"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.151"
+        app:layout_constraintStart_toEndOf="@+id/btn_hb"
+        app:layout_constraintTop_toBottomOf="@+id/tv_titulohd" />
+
+    <TextView
+        android:id="@+id/tv_ho"
+        android:layout_width="258dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="171dp"
+        android:text="   0"
+        android:textColor="@color/purple_200"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/imagebtn_returnh"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.151"
+        app:layout_constraintStart_toEndOf="@+id/btn_hb"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tituloho" />
+
+    <ImageButton
+        android:id="@+id/btn_hd"
+        android:layout_width="29dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:background="#032A39"
+        android:onClick="btn_hd"
+        android:tint="@color/purple_200"
+        app:layout_constraintStart_toEndOf="@+id/et_hd"
+        app:layout_constraintTop_toBottomOf="@+id/tv_titulohd"
+        app:srcCompat="@android:drawable/ic_menu_send" />
+
+    <EditText
+        android:id="@+id/et_ho"
+        android:layout_width="78dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="5dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:numeric="decimal"
+        android:text="0"
+        android:textColor="@color/teal_200"
+        app:layout_constraintEnd_toStartOf="@+id/btn_ho"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tituloho" />
+
+    <EditText
+        android:id="@+id/et_hd"
+        android:layout_width="78dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:numeric="decimal"
+        android:text="0"
+        android:textColor="@color/teal_200"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_titulohd" />
+
+    <TextView
+        android:id="@+id/tv_tituloho"
+        android:layout_width="327dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="HEXADECIMAL PARA OCTAL"
+        android:textColor="@color/purple_200"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_hd" />
+
+    <ImageButton
+        android:id="@+id/btn_ho"
+        android:layout_width="29dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:background="#032A39"
+        android:onClick="btn_ho"
+        android:tint="@color/purple_200"
+        app:layout_constraintStart_toEndOf="@+id/et_ho"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tituloho"
+        app:srcCompat="@android:drawable/ic_menu_send" />
+
+    <TextView
+        android:id="@+id/tv_titulohd"
+        android:layout_width="327dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="HEXADECIMAL PARA DECIMAL"
+        android:textColor="@color/purple_200"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_hb" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
